@@ -39,7 +39,7 @@ markup. What still needs a human eye:
 |---|---|---|
 | Privacy policy text | `privacy/index.html` | **Draft** — written from the app's actual behaviour, but review it before publishing |
 | Policy date | `privacy/index.html` | Currently 1 January 2026 |
-| Data controller identity | `privacy/index.html` | The policy names no company or individual as data controller; add one if you need it for GDPR purposes |
+| Data controller identity | `privacy/index.html` | Decided: "IntervalPro" plus the contact address, no separate legal entity named |
 
 Contact address used throughout: **intervaltimerpro@gmail.com**.
 

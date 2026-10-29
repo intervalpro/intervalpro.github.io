@@ -406,6 +406,19 @@ h1 {
 }
 .cta-band h2 { font-size: clamp(1.4rem, 3vw, 2rem); margin-bottom: 8px; }
 .cta-band p { color: var(--muted); font-size: 0.95rem; }
+/* The copy block must yield width to the button: without an explicit flex basis the extra
+   disclosure line made the block wider than the row and wrapped the button onto its own line. */
+.cta-band-inner > div { flex: 1 1 420px; min-width: 0; }
+.cta-band-inner .play-btn { flex: none; }
+/* The ad/purchase disclosure: deliberately quieter than the "Free on Android" line above it,
+   because it is a footnote to the price claim rather than a second call to action. */
+.cta-band-note {
+  margin-top: 10px;
+  font-size: 0.83rem;
+  line-height: 1.5;
+  color: var(--muted-dim);
+  max-width: 46em;
+}
 
 /* ── Footer ───────────────────────────────────────────────────────────── */
 
