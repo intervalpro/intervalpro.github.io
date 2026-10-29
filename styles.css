@@ -683,6 +683,15 @@ h1 {
 
 /* ── Responsive ───────────────────────────────────────────────────────── */
 
+/* Between 901px and 1100px the two-column hero leaves the artwork column narrow, and at full
+   size the rotated pair finished flush against the viewport edge. Shrink the phones there
+   rather than let the front one touch the screen border. */
+@media (max-width: 1100px) and (min-width: 901px) {
+  .phone { width: 226px; }
+  .phone-back { width: 196px; }
+  .p-digits { font-size: 2.7rem; }
+}
+
 @media (max-width: 900px) {
   .hero-grid { grid-template-columns: 1fr; }
   .hero-copy { order: 1; }

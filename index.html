@@ -90,6 +90,22 @@
       </div>
 
       <div class="hero-art" aria-hidden="true">
+        <!-- Phone B: the setup screen. First in the DOM (and behind on the z-axis) so the pair
+             composes left-to-right with the setup phone never running off the container edge. -->
+        <div class="phone phone-back">
+          <div class="phone-screen phase-idle">
+            <div class="p-status"><span>9:38</span><span class="p-status-icons" aria-hidden="true"></span></div>
+            <div class="p-head">SESSION</div>
+            <div class="p-boxes">
+              <div class="p-box box-prep"><span>PREP</span><strong>0:10</strong></div>
+              <div class="p-box box-work"><span>WORK</span><strong>1:00</strong></div>
+              <div class="p-box box-rest"><span>REST</span><strong>1:00</strong></div>
+              <div class="p-box box-rounds"><span>ROUNDS</span><strong>8</strong></div>
+            </div>
+            <div class="p-start">START</div>
+          </div>
+        </div>
+
         <!-- Phone A: the running timer. Hand-built to match the app's dark palette. -->
         <div class="phone phone-front">
           <div class="phone-screen phase-work">
@@ -103,21 +119,6 @@
               <div class="p-digits">0:45</div>
             </div>
             <div class="p-controls"><span class="p-ctl"></span><span class="p-ctl p-ctl-stop"></span></div>
-          </div>
-        </div>
-
-        <!-- Phone B: the setup screen, peeking out behind. -->
-        <div class="phone phone-back">
-          <div class="phone-screen phase-idle">
-            <div class="p-status"><span>9:38</span><span class="p-status-icons" aria-hidden="true"></span></div>
-            <div class="p-head">SESSION</div>
-            <div class="p-boxes">
-              <div class="p-box box-prep"><span>PREP</span><strong>0:10</strong></div>
-              <div class="p-box box-work"><span>WORK</span><strong>1:00</strong></div>
-              <div class="p-box box-rest"><span>REST</span><strong>1:00</strong></div>
-              <div class="p-box box-rounds"><span>ROUNDS</span><strong>8</strong></div>
-            </div>
-            <div class="p-start">START</div>
           </div>
         </div>
       </div>
