@@ -1,0 +1,12 @@
+# local tooling and OS noise — never published
+build/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# editors
+.vscode/
+.idea/
+*.log
