@@ -30,16 +30,18 @@ Deploys go live about a minute after a push. HTTPS is automatic on `*.github.io`
 | `assets/` | Icons, favicons, social image, and the social image's HTML source |
 | `.nojekyll` | Disables Jekyll processing |
 
-## Before launch: replace these placeholders
+## Before launch: review these
 
-Search the files for `PLACEHOLDER` — each spot is marked with an HTML comment.
+The Play Store links and the support address are final and no placeholders remain in the
+markup. What still needs a human eye:
 
 | What | Where | Notes |
 |---|---|---|
-| Play Store URL | `index.html` (4 links) | Currently `…details?id=com.gsi85.intervalpro`, which is correct once the listing is public and 404s until then |
-| Support email | `index.html` footer, `privacy/index.html` (×3) | Currently `contact@example.com` |
 | Privacy policy text | `privacy/index.html` | **Draft** — written from the app's actual behaviour, but review it before publishing |
 | Policy date | `privacy/index.html` | Currently 1 January 2026 |
+| Data controller identity | `privacy/index.html` | The policy names no company or individual as data controller; add one if you need it for GDPR purposes |
+
+Contact address used throughout: **intervaltimerpro@gmail.com**.
 
 ## About the screenshots
 
