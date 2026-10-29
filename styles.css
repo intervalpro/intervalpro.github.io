@@ -245,28 +245,11 @@ h1 {
   line-height: 1.45;
 }
 
-.hero-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px 22px;
-  font-size: 0.9rem;
-  color: var(--muted);
-}
-.hero-list li { display: flex; align-items: center; gap: 9px; }
-.hero-list li::before {
-  content: "";
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background: var(--green);
-  flex: none;
-}
+/* ── Phone frames around the real screenshots ────────────────────────── */
 
-/* ── Phone mockups (hand-built; see README) ───────────────────────────── */
-
-/* Two phones, overlapping by a fixed 52px so neither one is cut in half:
-   the pair is a flex row, not an absolute backdrop, so the back phone keeps
-   its full width and only its right edge slides under the front one. */
+/* Two phones, overlapping by a fixed 52px: the pair is a flex row, not an absolute
+   backdrop, so the back phone keeps its full width and only its right edge slides
+   under the front one. */
 .hero-art {
   position: relative;
   display: flex;
@@ -281,175 +264,27 @@ h1 {
   border: 1px solid #2A2A2A;
   box-shadow: 0 40px 80px rgba(0, 0, 0, 0.6), 0 0 0 8px #131313;
   padding: 8px;
-  width: 258px;
+  width: 240px;
   flex: none;
 }
 
-.phone-screen {
-  border-radius: 27px;
-  aspect-ratio: 9 / 19.2;
-  display: flex;
-  flex-direction: column;
-  padding: 14px 16px 18px;
-  overflow: hidden;
-  background: #000;
+.phone img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 26px;
 }
 
-.phase-work { background: var(--work); }
-.phase-idle { background: #1A1A1A; }
-
 .phone-front { position: relative; z-index: 2; }
+/* Overlap is deliberately small (30px): the setup capture fills the full frame width, so a
+   deep overlap slices its value boxes and START button mid-word and reads as broken. */
 .phone-back {
   position: relative;
   z-index: 1;
-  width: 224px;
-  margin-right: -52px;
+  width: 200px;
+  margin-right: -30px;
   transform: translateY(14px) rotate(-7deg);
   filter: brightness(0.86);
-}
-
-/* status bar */
-.p-status {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 0.6rem;
-  color: rgba(255, 255, 255, 0.85);
-  font-variant-numeric: tabular-nums;
-  margin-bottom: 10px;
-}
-.p-status-icons {
-  width: 34px;
-  height: 8px;
-  border-radius: 2px;
-  background:
-    linear-gradient(90deg, rgba(255,255,255,0.75) 0 26%, transparent 26% 34%, rgba(255,255,255,0.75) 34% 60%, transparent 60% 68%, rgba(255,255,255,0.75) 68% 100%);
-}
-
-/* timer screen */
-.p-top {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 6px;
-}
-.p-phase {
-  font-size: 0.68rem;
-  font-weight: 800;
-  letter-spacing: 0.18em;
-  color: #fff;
-}
-.p-round {
-  font-size: 0.6rem;
-  letter-spacing: 0.1em;
-  color: rgba(255, 255, 255, 0.72);
-  font-variant-numeric: tabular-nums;
-}
-
-.p-dial {
-  position: relative;
-  flex: 1;
-  display: grid;
-  place-items: center;
-  margin: 6px 0;
-}
-.ring { position: absolute; inset: 0; width: 100%; height: 100%; transform: rotate(-90deg); }
-.ring-track {
-  fill: none;
-  stroke: rgba(255, 255, 255, 0.28);
-  stroke-width: 5;
-}
-.ring-progress {
-  fill: none;
-  stroke: #fff;
-  stroke-width: 5;
-  stroke-linecap: round;
-}
-.p-digits {
-  position: relative;
-  font-size: 3rem;
-  font-weight: 700;
-  letter-spacing: -0.04em;
-  font-variant-numeric: tabular-nums;
-  line-height: 1;
-}
-
-.p-controls {
-  display: flex;
-  justify-content: center;
-  gap: 14px;
-  padding-top: 6px;
-}
-.p-ctl {
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background: rgba(0, 0, 0, 0.35);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  position: relative;
-}
-.p-ctl::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  margin: auto;
-  width: 12px;
-  height: 14px;
-  /* pause: two bars, drawn as a hard-stop gradient rather than a clip-path */
-  background: linear-gradient(90deg, #fff 0 37%, transparent 37% 63%, #fff 63% 100%);
-}
-.p-ctl-stop::after { height: 12px; width: 12px; background: #fff; }
-
-/* setup screen */
-.p-head {
-  font-size: 0.66rem;
-  font-weight: 800;
-  letter-spacing: 0.18em;
-  color: rgba(255, 255, 255, 0.72);
-  margin: 4px 0 12px;
-}
-.p-boxes {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 9px;
-  flex: 1;
-  align-content: start;
-}
-.p-box {
-  border-radius: 12px;
-  padding: 10px 11px;
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-  color: #fff;
-}
-.p-box span {
-  font-size: 0.52rem;
-  letter-spacing: 0.12em;
-  font-weight: 700;
-  opacity: 0.82;
-}
-.p-box strong {
-  font-size: 1.18rem;
-  font-variant-numeric: tabular-nums;
-  letter-spacing: -0.02em;
-  line-height: 1.15;
-}
-.box-prep { background: #424242; }
-.box-work { background: var(--work); }
-.box-rest { background: var(--rest); }
-.box-rounds { background: var(--surface-3); }
-
-.p-start {
-  margin-top: 12px;
-  background: var(--green-deep);
-  color: #fff;
-  border-radius: 12px;
-  text-align: center;
-  font-size: 0.7rem;
-  font-weight: 800;
-  letter-spacing: 0.14em;
-  padding: 11px 0;
 }
 
 /* ── Strip / chips ────────────────────────────────────────────────────── */
@@ -687,9 +522,8 @@ h1 {
    size the rotated pair finished flush against the viewport edge. Shrink the phones there
    rather than let the front one touch the screen border. */
 @media (max-width: 1100px) and (min-width: 901px) {
-  .phone { width: 226px; }
-  .phone-back { width: 196px; }
-  .p-digits { font-size: 2.7rem; }
+  .phone { width: 212px; }
+  .phone-back { width: 176px; }
   /* Without this the headline wraps to three lines with "time." orphaned on its own,
      because the copy column is at its narrowest while the clamp is near its largest. */
   h1 { font-size: clamp(1.9rem, 4.5vw, 3rem); }
@@ -710,7 +544,6 @@ h1 {
   #main { scroll-margin-top: var(--header-h); }
   .section { padding: 52px 0; }
   .cta-band-inner { flex-direction: column; align-items: flex-start; }
-  .p-digits { font-size: 2.6rem; }
 }
 
 @media (max-width: 480px) {

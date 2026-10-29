@@ -42,13 +42,29 @@ Search the files for `PLACEHOLDER` — each spot is marked with an HTML comment.
 | Privacy policy text | `privacy/index.html` | **Draft** — written from the app's actual behaviour, but review it before publishing |
 | Policy date | `privacy/index.html` | Currently 1 January 2026 |
 
-## About the phone mockups
+## About the screenshots
 
-The two phones in the hero are **hand-built HTML and CSS**, not screenshots. They are
-accurate to the app's real palette and layout vocabulary (prep grey `#424242`, work green
-`#1B5E20`, rest red `#B71C1C`, start `#2E7D32`), but they are an illustration. Replace them
-with real captures when you have them — drop the images in `assets/` and swap the `.phone`
-blocks for `<img>` elements with `width`/`height` set and meaningful `alt` text.
+The hero uses **real device captures**, copied unchanged from the app repo's
+`store-assets/` folder:
+
+| Site file | Source | Shows |
+|---|---|---|
+| `assets/work.jpg` | `store-assets/work.jpg` | The running timer in a WORK phase (720×1571) |
+| `assets/setup.jpg` | `store-assets/setup.jpg` | The setup screen with prep / work / rest / rounds (720×1569) |
+
+They sit inside the CSS phone frames (`.phone`), which supply the bezel, radius and shadow. The
+back phone is rotated, dimmed and overlapped by 30px behind the front one — the overlap is kept
+small on purpose, because the setup capture fills its full width and a deep overlap slices its
+value boxes mid-word.
+
+To swap a screenshot, replace the file and update the `width`/`height` attributes on the `<img>`
+so the browser still reserves the right space before the image loads. Keep
+`decoding` synchronous on the front phone: it is the largest above-the-fold image, and
+`decoding="async"` let it paint blank in headless captures.
+
+The favicons, `apple-touch-icon` and `favicon.ico` are downscaled from
+`store-assets/app-icon-512.png` — the best-resolution icon in the tree (the launcher density
+buckets top out at 192px, so using those would have meant upscaling).
 
 ## Regenerating the social image
 

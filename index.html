@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>IntervalPro — Interval Timer for HIIT, Boxing &amp; Circuits</title>
-<meta name="description" content="IntervalPro is an Android interval timer for HIIT, boxing, circuits, CrossFit and Hyrox. Prep, work and rest phases, multi-section sessions, saved presets, and a clock that keeps time with your screen locked.">
+<meta name="description" content="IntervalPro is an interval timer for HIIT, boxing, circuits, CrossFit and Hyrox. Set your work and rest, put the phone down, and let clear visual and audio cues keep you on time.">
 <link rel="canonical" href="https://intervalpro.github.io/">
 <meta name="theme-color" content="#0B0B0C">
 <meta name="color-scheme" content="dark">
@@ -14,14 +14,14 @@
 <meta property="og:site_name" content="IntervalPro">
 <meta property="og:url" content="https://intervalpro.github.io/">
 <meta property="og:title" content="IntervalPro — Interval Timer for HIIT, Boxing &amp; Circuits">
-<meta property="og:description" content="Colour-coded prep, work and rest phases. Multi-section sessions. A clock that never drifts — even with your screen locked.">
+<meta property="og:description" content="Set your work and rest, put the phone down, and let clear visual and audio cues keep you on time.">
 <meta property="og:image" content="https://intervalpro.github.io/assets/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="IntervalPro — the interval timer for HIIT, boxing and circuits.">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="IntervalPro — Interval Timer for HIIT, Boxing &amp; Circuits">
-<meta name="twitter:description" content="Colour-coded prep, work and rest phases. Multi-section sessions. A clock that never drifts.">
+<meta name="twitter:description" content="Set your work and rest, put the phone down, and let clear visual and audio cues keep you on time.">
 <meta name="twitter:image" content="https://intervalpro.github.io/assets/og-image.png">
 
 <link rel="icon" href="/favicon.ico" sizes="any">
@@ -71,7 +71,7 @@
       <div class="hero-copy">
         <p class="eyebrow">HIIT · Boxing · Circuits · CrossFit · Hyrox</p>
         <h1>Every round on time.<br><span class="accent">Nothing to count.</span></h1>
-        <p class="lede">IntervalPro is an Android interval timer built for training instead of tapping. Set your prep, work, rest and rounds — then put the phone down. Colour-coded phases, a clock that never drifts, and a timer that keeps running with the screen locked.</p>
+        <p class="lede">Set your work and rest, then put the phone down. Clear visual and audio cues keep you on time — even with the screen off.</p>
 
         <div class="cta-row">
           <!-- PLACEHOLDER: swap both Play URLs for the live listing when it exists. -->
@@ -79,47 +79,20 @@
             <svg class="play-glyph" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.2v13.6L19.5 12z"/></svg>
             <span class="play-btn-text" aria-hidden="true"><small>GET IT ON</small><span>Google Play</span></span>
           </a>
-          <p class="cta-note">Free on Android 8.0+<br>No account, no sign-up</p>
+          <p class="cta-note">Free on Android<br>No account needed</p>
         </div>
-
-        <ul class="hero-list">
-          <li>Prep, work &amp; rest phases</li>
-          <li>Multi-section sessions</li>
-          <li>Runs with the screen off</li>
-        </ul>
       </div>
 
-      <div class="hero-art" aria-hidden="true">
-        <!-- Phone B: the setup screen. First in the DOM (and behind on the z-axis) so the pair
-             composes left-to-right with the setup phone never running off the container edge. -->
+      <div class="hero-art">
+        <!-- The setup screen sits behind the running timer. -->
         <div class="phone phone-back">
-          <div class="phone-screen phase-idle">
-            <div class="p-status"><span>9:38</span><span class="p-status-icons" aria-hidden="true"></span></div>
-            <div class="p-head">SESSION</div>
-            <div class="p-boxes">
-              <div class="p-box box-prep"><span>PREP</span><strong>0:10</strong></div>
-              <div class="p-box box-work"><span>WORK</span><strong>1:00</strong></div>
-              <div class="p-box box-rest"><span>REST</span><strong>1:00</strong></div>
-              <div class="p-box box-rounds"><span>ROUNDS</span><strong>8</strong></div>
-            </div>
-            <div class="p-start">START</div>
-          </div>
+          <img src="assets/setup.jpg" width="720" height="1569" alt="">
         </div>
 
-        <!-- Phone A: the running timer. Hand-built to match the app's dark palette. -->
+        <!-- A real capture of the running timer. -->
         <div class="phone phone-front">
-          <div class="phone-screen phase-work">
-            <div class="p-status"><span>9:41</span><span class="p-status-icons" aria-hidden="true"></span></div>
-            <div class="p-top"><span class="p-phase">WORK</span><span class="p-round">ROUND 3 / 8</span></div>
-            <div class="p-dial">
-              <svg class="ring" viewBox="0 0 200 200" aria-hidden="true">
-                <circle class="ring-track" cx="100" cy="100" r="88" pathLength="100"></circle>
-                <circle class="ring-progress" cx="100" cy="100" r="88" pathLength="100" stroke-dasharray="100" stroke-dashoffset="35"></circle>
-              </svg>
-              <div class="p-digits">0:45</div>
-            </div>
-            <div class="p-controls"><span class="p-ctl"></span><span class="p-ctl p-ctl-stop"></span></div>
-          </div>
+          <img src="assets/work.jpg" width="720" height="1571"
+               alt="IntervalPro running a work interval: the word WORK, 0:45 remaining and round 1 of 10.">
         </div>
       </div>
     </div>
@@ -128,7 +101,7 @@
   <!-- ── Built for ───────────────────────────────────────────────────── -->
   <section class="strip" aria-label="Training formats">
     <div class="wrap">
-      <p class="strip-label">Built for the formats you actually train</p>
+      <p class="strip-label">Built for the way you train</p>
       <ul class="chips">
         <li>HIIT</li><li>Tabata</li><li>Boxing rounds</li><li>EMOM</li>
         <li>Circuits</li><li>CrossFit</li><li>Hyrox</li><li>Strength sets</li>
@@ -140,55 +113,55 @@
   <section id="features" class="section">
     <div class="wrap">
       <h2 class="section-title">Built to stay out of the way</h2>
-      <p class="section-sub">Six things that matter once you are mid-round, breathing hard, and not looking at a settings screen.</p>
+      <p class="section-sub">Six things that matter mid-round.</p>
 
       <div class="cards">
         <article class="card">
           <span class="card-icon" aria-hidden="true">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2.5 2"/><path d="M9 2h6"/></svg>
           </span>
-          <h3>A clock that never drifts</h3>
-          <p>Every frame is calculated from the system's monotonic clock rather than counting ticks. A throttled phone or a 40-minute screen-off cannot make a round run long.</p>
+          <h3>Timing you can trust</h3>
+          <p>Every round starts and ends exactly on time.</p>
         </article>
 
         <article class="card">
           <span class="card-icon card-icon-green" aria-hidden="true">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="3"/><path d="M3 10h18"/><path d="M8 4v16"/></svg>
           </span>
-          <h3>Prep, work, rest — colour coded</h3>
-          <p>A prep countdown so you are set before round one, a green work phase, a red rest phase. You read the phase from across the room without reading any text.</p>
+          <h3>Know your phase</h3>
+          <p>Clear visual and audio cues help you understand where you are at a glance.</p>
         </article>
 
         <article class="card">
           <span class="card-icon" aria-hidden="true">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="7" height="6" rx="1.5"/><rect x="3" y="14" width="7" height="5" rx="1.5"/><rect x="14" y="5" width="7" height="6" rx="1.5"/><rect x="14" y="14" width="7" height="5" rx="1.5"/></svg>
           </span>
-          <h3>Chain real sessions</h3>
-          <p>Stack blocks — four rounds of 1:00/0:30, then six of 0:40/0:20. The prep runs once, then each block follows the last with no manual restart.</p>
+          <h3>Build any session</h3>
+          <p>Stack blocks and rounds — four of 1:00/0:30, then six of 0:40/0:20, all in one session.</p>
         </article>
 
         <article class="card">
           <span class="card-icon card-icon-green" aria-hidden="true">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h11l3 3v13H5z"/><path d="M9 9h6"/><path d="M9 13h6"/><path d="M9 17h3"/></svg>
           </span>
-          <h3>Save the workout, load it later</h3>
-          <p>Save a session as a preset and load it back next time, instead of re-tuning every picker before you start. Your last-used values are kept too.</p>
+          <h3>Save your workouts</h3>
+          <p>Save a session once and load it next time, with no numbers to re-enter.</p>
         </article>
 
         <article class="card">
           <span class="card-icon" aria-hidden="true">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8a6 6 0 1 0-12 0c0 7-3 8-3 8h18s-3-1-3-8"/><path d="M13.7 21a2 2 0 0 1-3.4 0"/></svg>
           </span>
-          <h3>Keeps running in the background</h3>
-          <p>A live countdown notification in the shade, so you can check the round with the phone in your pocket. The timer is a foreground service — not a screen you must keep open.</p>
+          <h3>Keeps running</h3>
+          <p>Lock your phone or switch apps — the countdown stays in your notifications.</p>
         </article>
 
         <article class="card">
           <span class="card-icon card-icon-green" aria-hidden="true">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="14" rx="2"/><path d="M8 21h8"/><path d="M12 18v3"/><path d="M7 11h4"/><path d="M9 9v4"/></svg>
           </span>
-          <h3>Big digits, either orientation</h3>
-          <p>The countdown scales to the display, so landscape on a stand is as readable as portrait in your hand. Your screen stays awake while the session runs.</p>
+          <h3>Readable from anywhere</h3>
+          <p>Big digits in portrait or landscape, with the screen kept awake while you train.</p>
         </article>
       </div>
     </div>
@@ -202,17 +175,17 @@
         <li class="step">
           <span class="step-num">1</span>
           <h3>Set the block</h3>
-          <p>Spin the pickers for prep, work, rest and rounds. Add a second block if the session changes halfway through.</p>
+          <p>Prep, work, rest and rounds — plus a second block if the session changes halfway.</p>
         </li>
         <li class="step">
           <span class="step-num">2</span>
           <h3>Press START</h3>
-          <p>The prep counts down once, then the work and rest phases alternate for every round you set. Pause and resume whenever you need.</p>
+          <p>Prep counts you in once, then your rounds run themselves.</p>
         </li>
         <li class="step">
           <span class="step-num">3</span>
           <h3>Train</h3>
-          <p>Put the phone down. The phase colour, the digits and the notification tell you where you are — even with the screen off.</p>
+          <p>Put the phone down — colour, digits and sound keep you on track.</p>
         </li>
       </ol>
     </div>
@@ -221,17 +194,16 @@
   <!-- ── Pricing / ads ───────────────────────────────────────────────── -->
   <section class="section section-tight">
     <div class="wrap">
-      <h2 class="section-title">Free, and honest about it</h2>
-      <p class="section-sub">No subscription, no trial clock, no account. A small banner keeps the lights on — remove it once if you would rather not see it.</p>
+      <h2 class="section-title">Free to use</h2>
+      <p class="section-sub">No subscription, no account. A small banner keeps the lights on.</p>
 
       <div class="price-grid">
         <div class="price-card">
           <h3>Free</h3>
           <p class="price-tag">€0</p>
           <ul>
-            <li>Every timer feature, unlocked</li>
+            <li>Every feature unlocked</li>
             <li>Unlimited sections and rounds</li>
-            <li>Saved presets</li>
             <li>One small banner ad</li>
           </ul>
         </div>
@@ -240,11 +212,11 @@
           <p class="price-tag">One-time</p>
           <ul>
             <li>Banner gone, permanently</li>
-            <li>Nothing else changes — no feature is locked either way</li>
-            <li>Restorable on a new phone with the same Google account</li>
+            <li>Restorable on a new phone</li>
+            <li>No feature is locked either way</li>
           </ul>
           <!-- PLACEHOLDER: real price once the Play listing is live. -->
-          <p class="price-note">Price is set on the Play Store listing.</p>
+          <p class="price-note">Price shown on Google Play.</p>
         </div>
       </div>
     </div>
@@ -256,28 +228,24 @@
       <h2 class="section-title">Questions</h2>
       <div class="faq">
         <details>
-          <summary>Does the timer keep running when the screen is off?</summary>
-          <p>Yes. The session runs in an Android foreground service with a live countdown in the notification shade, so locking the phone or switching apps does not stop it. There is also an option to keep the screen awake while you train.</p>
+          <summary>Does it keep running with the screen off?</summary>
+          <p>Yes. Locking the phone or switching apps does not stop it — the countdown stays in your notifications.</p>
         </details>
         <details>
           <summary>What happens if I close the app mid-session?</summary>
-          <p>Nothing. The session is restored when you come back — round, phase and remaining time intact — and a paused session resumes with exactly the time that was left.</p>
+          <p>Nothing. You come back to the same round, phase and remaining time.</p>
         </details>
         <details>
           <summary>What are prep, work and rest?</summary>
-          <p>Prep is the countdown before round one, so you can set your feet. Work is the effort interval, rest is the recovery. Prep runs once at the start; work and rest alternate for every round of the block.</p>
+          <p>Prep counts you in before round one. Work is the effort, rest is the recovery.</p>
         </details>
         <details>
-          <summary>Can I build a session with different intervals?</summary>
-          <p>Yes. A session is a list of blocks, each with its own work, rest and rounds. Four rounds of 1:00/0:30 followed by six of 0:40/0:20 is one session, started once.</p>
+          <summary>Can one session use different intervals?</summary>
+          <p>Yes — a session is a list of blocks, each with its own work, rest and rounds.</p>
         </details>
         <details>
-          <summary>Do I need an account or an internet connection?</summary>
-          <p>No account, and no connection needed to train. Your settings and last session are stored on the device.</p>
-        </details>
-        <details>
-          <summary>Which Android versions are supported?</summary>
-          <p>Android 8.0 and newer, on phones and tablets. The layout adapts to portrait and landscape.</p>
+          <summary>Do I need an account?</summary>
+          <p>No account, and no connection needed to train.</p>
         </details>
       </div>
     </div>
@@ -288,7 +256,7 @@
     <div class="wrap cta-band-inner">
       <div>
         <h2>Set it once. Train the whole session.</h2>
-        <p>Free on Android 8.0 and up. No account, no sign-up.</p>
+        <p>Free on Android. No account needed.</p>
       </div>
       <a class="play-btn" href="https://play.google.com/store/apps/details?id=com.gsi85.intervalpro" aria-label="Get IntervalPro on Google Play">
         <svg class="play-glyph" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.2v13.6L19.5 12z"/></svg>
@@ -311,7 +279,7 @@
       <a href="mailto:contact@example.com">Contact</a>
       <a href="https://play.google.com/store/apps/details?id=com.gsi85.intervalpro">Google Play</a>
     </nav>
-    <p class="footer-copy">&copy; <span id="year">2026</span> IntervalPro. Android and Google Play are trademarks of Google LLC.</p>
+    <p class="footer-copy">&copy; 2026 IntervalPro. Android and Google Play are trademarks of Google LLC.</p>
   </div>
 </footer>
 
