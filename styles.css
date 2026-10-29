@@ -690,6 +690,9 @@ h1 {
   .phone { width: 226px; }
   .phone-back { width: 196px; }
   .p-digits { font-size: 2.7rem; }
+  /* Without this the headline wraps to three lines with "time." orphaned on its own,
+     because the copy column is at its narrowest while the clamp is near its largest. */
+  h1 { font-size: clamp(1.9rem, 4.5vw, 3rem); }
 }
 
 @media (max-width: 900px) {
